@@ -9,7 +9,8 @@ The additional REST endpoints are defined within the *wlh/v1/* namespace, result
 https://westlondonhasn.com/wp-json/wlh/v1/
 
 ## Endpoint implementation
-All the endpoints fefied for the Hash Stats functionality are derived by extendign the base WordPress REST API.
+All the endpoints defined for the Hash Stats functionality are derived by extending the base WordPress REST API.  They make use of the *wpdb* 
+class and its various methods to manage the database connection and to retrieve, insert or update
 ## REST Endpoints
 
 ### hashers
@@ -32,6 +33,6 @@ SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTM0MjQ4OSwxOTM3NTExMzczLDg5Nj
+eyJoaXN0b3J5IjpbLTE0MTc4Nzc4NCwxOTM3NTExMzczLDg5Nj
 AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
 -->
