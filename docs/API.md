@@ -29,6 +29,7 @@ add_action( 'rest_api_init', function () {
 ```
 The full code for the functions.php file can be found at
 https://github.com/rajbooth/Hash-Stats/raw/master/code/functions.php
+This file needs to be deployed in the current WordPress theme directory for the West London Hash website in order for the API to be active.
 
 ## REST Endpoints
 
@@ -52,6 +53,6 @@ SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjEzODM3NSwxOTM3NTExMzczLDg5Nj
+eyJoaXN0b3J5IjpbMTE1Mjc5MDEwNSwxOTM3NTExMzczLDg5Nj
 AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
 -->
