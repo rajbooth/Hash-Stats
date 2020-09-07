@@ -4,6 +4,7 @@ nav:
   - About:  about.md
   - Primary Data Tables: data_tables.md
   - SQL Views: SQL_views.md
+  - REST API: API.md
   - Reports:  reports.md
   - Run Registration Form: registration_form.md
   - Run Attendance Form: run_form.md
