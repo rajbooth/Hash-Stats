@@ -6,13 +6,9 @@ nav:
 - Primary Data Tables: data_tables.md
 - SQL Views: SQL_views.md
 - Reports:  reports.md
-  
+
 theme:  readthedocs
-
-extra_javascript:
-
--   [https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML](https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxNDQ2OTI3LDE1NTg3NzQ1ODksLTEyOT
-QxMDA1NDddfQ==
+eyJoaXN0b3J5IjpbLTg1MzAxMDczNyw0NTE0NDY5MjcsMTU1OD
+c3NDU4OSwtMTI5NDEwMDU0N119
 -->
