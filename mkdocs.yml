@@ -1,14 +1,14 @@
 
 site_name: Hash Stats
 nav:  
-	  	- Home:  index.md  
-	  	- About:  about.md
-	  	- Primary Data Tables: data_tables.md
-	  	- SQL Views: SQL_views.md
-	    - Reports:  reports.md
+- Home:  index.md  
+- About:  about.md
+- Primary Data Tables: data_tables.md
+- SQL Views: SQL_views.md
+- Reports:  reports.md
   
 theme:  readthedocs
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjQ0NzQwMywtMTI5NDEwMDU0N119
+eyJoaXN0b3J5IjpbMTU1ODc3NDU4OSwtMTI5NDEwMDU0N119
 -->
