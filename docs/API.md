@@ -12,7 +12,7 @@ https://westlondonhasn.com/wp-json/wlh/v1/
 
 ### hashers
 **Description**
-
+Returns a list of all hashers in the  westlon2_stats database.
 ### runs
 
 ### next_run 
@@ -23,6 +23,6 @@ https://westlondonhasn.com/wp-json/wlh/v1/
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2MDEwMTEzLDEwMzYyMDM1OTAsLTE0MT
-A1MjM5MzBdfQ==
+eyJoaXN0b3J5IjpbMTQ1NTgzNzkxMiw4OTYwMTAxMTMsMTAzNj
+IwMzU5MCwtMTQxMDUyMzkzMF19
 -->
