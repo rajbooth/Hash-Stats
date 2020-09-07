@@ -37,22 +37,62 @@ This file needs to be deployed in the current WordPress theme directory for the 
 **Description**
 Returns a list of all hashers in the  westlon2_stats database.
 **Usage**
-Used to populate hasher lookup tables in Google Sheets
+Populates hasher lookup tables in Google Sheets
 **SQL**
 ```SQL
 SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 ```
 
 ### runs
+**Description**
+Returns a list of all hashers in the  westlon2_stats database.
+**Usage**
+Populates hasher lookup tables in Google Sheets
+**SQL**
+```SQL
+SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
+```
 
 ### next_run 
+**Description**
+Returns a list of all hashers in the  westlon2_stats database.
+**Usage**
+Populates hasher lookup tables in Google Sheets
+**SQL**
+```SQL
+SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
+```
 
 ### run_form
+**Description**
+Returns a list of all hashers in the  westlon2_stats database.
+**Usage**
+Populates hasher lookup tables in Google Sheets
+**SQL**
+```SQL
+SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
+```
 
 ### add_run
+**Description**
+Returns a list of all hashers in the  westlon2_stats database.
+**Usage**
+Populates hasher lookup tables in Google Sheets
+**SQL**
+```SQL
+SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
+```
 
-### register
+##**Description**
+Returns a list of all hashers in the  westlon2_stats database.
+**Usage**
+Populates hasher lookup tables in Google Sheets
+**SQL**
+```SQL
+SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
+```
+# register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Mjc5MDEwNSwxOTM3NTExMzczLDg5Nj
+eyJoaXN0b3J5IjpbMTk3MzgzNjk3NiwxOTM3NTExMzczLDg5Nj
 AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
 -->
