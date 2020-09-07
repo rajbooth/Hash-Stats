@@ -78,21 +78,9 @@ SELECT * FROM run_form
 Returns a list of all hashers in the  westlon2_stats database.
 **Usage**
 Populates hasher lookup tables in Google Sheets
-**SQL**
-```SQL
-SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
-```
 
-##**Description**
-Returns a list of all hashers in the  westlon2_stats database.
-**Usage**
-Populates hasher lookup tables in Google Sheets
-**SQL**
-```SQL
-SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
-```
-# register
+### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDc0NDE1MCwxOTM3NTExMzczLDg5Nj
-AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
+eyJoaXN0b3J5IjpbLTE4ODk5OTEyODUsMTkzNzUxMTM3Myw4OT
+YwMTAxMTMsMTAzNjIwMzU5MCwtMTQxMDUyMzkzMF19
 -->
