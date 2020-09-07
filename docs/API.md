@@ -13,6 +13,12 @@ https://westlondonhasn.com/wp-json/wlh/v1/
 ### hashers
 **Description**
 Returns a list of all hashers in the  westlon2_stats database.
+**Usage**
+Used to populate lookup tables in Google Sheets
+**SQL**
+```SQL
+
+
 ### runs
 
 ### next_run 
@@ -23,6 +29,6 @@ Returns a list of all hashers in the  westlon2_stats database.
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTgzNzkxMiw4OTYwMTAxMTMsMTAzNj
-IwMzU5MCwtMTQxMDUyMzkzMF19
+eyJoaXN0b3J5IjpbMzkxMTAzNjI0LDg5NjAxMDExMywxMDM2Mj
+AzNTkwLC0xNDEwNTIzOTMwXX0=
 -->
