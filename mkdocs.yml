@@ -1,9 +1,18 @@
 site_name: Hash Stats
 nav:  
-	- Home:  index.md  
+  - Home:  index.md  
+  - About:  about.md
+  
+theme:  readthedocs
 
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+  - mdx_math:
+     enable_dollar_delimiter: True
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQ3NDYxMzYsNjUxMTU5NzgwLC0xMT
-U0NTc2OTYzLDQ1MTQ0NjkyNywxNTU4Nzc0NTg5LC0xMjk0MTAw
-NTQ3XX0=
+eyJoaXN0b3J5IjpbLTExNzU3MDU0NiwtMTM5NDc0NjEzNiw2NT
+ExNTk3ODAsLTExNTQ1NzY5NjMsNDUxNDQ2OTI3LDE1NTg3NzQ1
+ODksLTEyOTQxMDA1NDddfQ==
 -->
