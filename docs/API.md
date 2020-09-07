@@ -27,8 +27,8 @@ add_action( 'rest_api_init', function () {
 	));
 });
 ```
-The full doce of the functions.php file can be found at
-code/functions.php
+The full code for the functions.php file can be found at
+https://github.com/rajbooth/Hash-Stats/raw/master/code/functions.php
 
 ## REST Endpoints
 
@@ -52,6 +52,6 @@ SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3MDg4MDUwLDE5Mzc1MTEzNzMsODk2MD
-EwMTEzLDEwMzYyMDM1OTAsLTE0MTA1MjM5MzBdfQ==
+eyJoaXN0b3J5IjpbLTc5MjEzODM3NSwxOTM3NTExMzczLDg5Nj
+AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
 -->
