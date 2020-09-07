@@ -1,12 +1,9 @@
 site_name: Hash Stats
 nav:  
-- Home:  index.md  
-- About:  about.md
-- Primary Data Tables: data_tables.md
-- SQL Views: SQL_views.md
-- Reports:  reports.md
+	- Home:  index.md  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUxMTU5NzgwLC0xMTU0NTc2OTYzLDQ1MT
-Q0NjkyNywxNTU4Nzc0NTg5LC0xMjk0MTAwNTQ3XX0=
+eyJoaXN0b3J5IjpbLTEzOTQ3NDYxMzYsNjUxMTU5NzgwLC0xMT
+U0NTc2OTYzLDQ1MTQ0NjkyNywxNTU4Nzc0NTg5LC0xMjk0MTAw
+NTQ3XX0=
 -->
