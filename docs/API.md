@@ -13,18 +13,18 @@ All the endpoints defined for the Hash Stats functionality are derived by extend
 class and its various methods to manage the database connection and to retrieve, insert or update data in the westlon2_stats database.  A sample of the php code used for a typical POST operation is shown here.
 ```php
 function add_hasher_run( WP_REST_Request $request ) {
-$mydb = new wpdb(DB_USER,DB_PASSWORD,'westlon2_stats',DB_HOST);
-$table = 'wlh_hasher_run';
-$item = $request->get_json_params();
-$mydb->replace($table, $item);
-return $mydb->insert_id;
+	$mydb = new wpdb(DB_USER,DB_PASSWORD,'westlon2_stats',DB_HOST);
+	$table = 'wlh_hasher_run';
+	$item = $request->get_json_params();
+	$mydb->replace($table, $item);
+	return $mydb->insert_id;
 }
 
 add_action( 'rest_api_init', function () {
 	register_rest_route('wlh/v1', 'add_run', array(
 		'methods' => 'POST',
-'callback' => 'add_hasher_run'
-));
+		'callback' => 'add_hasher_run'
+	));
 });
 ```
 
@@ -50,6 +50,6 @@ SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODg1MTYzNywxOTM3NTExMzczLDg5Nj
-AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
+eyJoaXN0b3J5IjpbOTEwNzM0NTAxLDE5Mzc1MTEzNzMsODk2MD
+EwMTEzLDEwMzYyMDM1OTAsLTE0MTA1MjM5MzBdfQ==
 -->
