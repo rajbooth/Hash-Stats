@@ -11,6 +11,7 @@ https://westlondonhasn.com/wp-json/wlh/v1/
 ## REST Endpoints
 
 ### hashers
+**Description**
 
 ### runs
 
@@ -18,8 +19,10 @@ https://westlondonhasn.com/wp-json/wlh/v1/
 
 ### run_form
 
-## add_run
+### add_run
+
+### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDMyOTY0MiwxMDM2MjAzNTkwLC0xND
-EwNTIzOTMwXX0=
+eyJoaXN0b3J5IjpbODk2MDEwMTEzLDEwMzYyMDM1OTAsLTE0MT
+A1MjM5MzBdfQ==
 -->
