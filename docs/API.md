@@ -70,7 +70,7 @@ Returns a list of all hashers in the  westlon2_stats database.
 Populates hasher lookup tables in Google Sheets
 **SQL**
 ```SQL
-SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
+SELECT * FROM run_form
 ```
 
 ### add_run
@@ -93,6 +93,6 @@ SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 ```
 # register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MDczNDgwNSwxOTM3NTExMzczLDg5Nj
+eyJoaXN0b3J5IjpbMTExNDc0NDE1MCwxOTM3NTExMzczLDg5Nj
 AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
 -->
