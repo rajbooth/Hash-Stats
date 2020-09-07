@@ -6,7 +6,6 @@ The hash stats functionality extends the existing Wordpress REST API by providin
 
 ## REST Namespace
 The additional REST endpoints are defined within the *wlh/v1/* namespace, resulting in a URL of the form 
-
 [https://westlondonhasn.com/wp-json/wlh/v1/](https://westlondonhasn.com/wp-json/wlh/v1/)
 
 ## Endpoint implementation
@@ -29,9 +28,7 @@ add_action( 'rest_api_init', function () {
 });
 ```
 The full code for the functions.php file can be found at
-
 [https://github.com/rajbooth/Hash-Stats/raw/master/code/functions.php](https://github.com/rajbooth/Hash-Stats/raw/master/code/functions.php)
-
 This file needs to be deployed in the current WordPress theme directory for the West London Hash website in order for the API to be active.
 
 ## REST Endpoints
@@ -84,7 +81,7 @@ Populates hasher lookup tables in Google Sheets
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njg5NDkyNzgsNDA1NDc2NDgxLDE5Mz
-c1MTEzNzMsODk2MDEwMTEzLDEwMzYyMDM1OTAsLTE0MTA1MjM5
-MzBdfQ==
+eyJoaXN0b3J5IjpbLTE1OTY5MzcxNzIsLTE4Njg5NDkyNzgsND
+A1NDc2NDgxLDE5Mzc1MTEzNzMsODk2MDEwMTEzLDEwMzYyMDM1
+OTAsLTE0MTA1MjM5MzBdfQ==
 -->
