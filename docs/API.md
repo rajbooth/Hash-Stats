@@ -28,6 +28,7 @@ add_action( 'rest_api_init', function () {
 });
 ```
 The full doce of the functions.php file can be found at
+code/functions.php
 
 ## REST Endpoints
 
@@ -51,6 +52,6 @@ SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjg0ODU0NywxOTM3NTExMzczLDg5Nj
-AxMDExMywxMDM2MjAzNTkwLC0xNDEwNTIzOTMwXX0=
+eyJoaXN0b3J5IjpbMjY3MDg4MDUwLDE5Mzc1MTEzNzMsODk2MD
+EwMTEzLDEwMzYyMDM1OTAsLTE0MTA1MjM5MzBdfQ==
 -->
