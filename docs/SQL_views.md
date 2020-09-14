@@ -49,9 +49,12 @@ WHERE
 
 ### hasher_stats
 #### Description
-Generates a dataset containing details of all runs attended for each hasher, by joining the wlh_hasher_run table to the *wlh_hasher* table.
+Generates a dataset containing details of all runs attended for each hasher, by joining the *wlh_hasher_run* table to the *wlh_hasher* table.
 
 #### Used in
+
+ - Hasher-stats report:  https://westlondonhash.com/hash-stats/hasher-stats/
+ - List item
 
 #### SQL
 ```SQL
@@ -138,6 +141,6 @@ ORDER BY
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5NTkyMzUxLC0yMzY2NTk2MSwxMjcwND
-k0MTUxXX0=
+eyJoaXN0b3J5IjpbMjExNDcwMzUyMiwtMjM2NjU5NjEsMTI3MD
+Q5NDE1MV19
 -->
