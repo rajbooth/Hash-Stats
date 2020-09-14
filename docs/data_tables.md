@@ -48,6 +48,28 @@ This is essentially a linking table that associates multiple hashers with each r
 
 #### SQL
 ```SQL
+-- Table structure for table `wlh_hasher_run`
+CREATE TABLE `wlh_hasher_run` (
+  `import_id` int(11) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `hasher_ID` smallint(6) NOT NULL,
+  `run_number` smallint(6) NOT NULL,
+  `hasher_name` varchar(50) DEFAULT NULL,
+  `run_date` date DEFAULT NULL,
+  `hasher_value` char(1) NOT NULL DEFAULT 'M'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Indexes for table `wlh_hasher_run`
+ALTER TABLE `wlh_hasher_run`
+  ADD PRIMARY KEY (`import_id`),
+  ADD UNIQUE KEY `idx_hasher_run` (`hasher_ID`,`run_number`),
+  ADD KEY `hasher_ID` (`hasher_ID`),
+  ADD KEY `run_number` (`run_number`);
+
+-- AUTO_INCREMENT for table `wlh_hasher_run`
+ALTER TABLE `wlh_hasher_run`
+  MODIFY `import_id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
 
 ```
 ### registrations
@@ -56,6 +78,6 @@ This is essentially a linking table that associates multiple hashers with each r
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQ0MTM0MTAsNzY5MDA2OTk1LDE4MT
-k0NDYzNjVdfQ==
+eyJoaXN0b3J5IjpbMjAzNDAwOTA3Nyw3NjkwMDY5OTUsMTgxOT
+Q0NjM2NV19
 -->
