@@ -44,15 +44,18 @@ CREATE TABLE `wlh_runs` (
 ```
 ### wlh_hasher_run
 #### Description
-This is essentially a linking table that associates multiple hashers with each run.  The *hasher_run* table uses run_number and *hasher_ID* as foreign keys to reference records in the *wlh_runs* and *wlh_hasher* tables respectively.
-#### SQL
+This is essentially a linking table that associates multiple hashers with each run.  The *hasher_run* table uses *run_number* and *hasher_ID* as foreign keys to reference records in the *wlh_runs* and *wlh_hasher* tables respectively.
 
+#### SQL
+```SQL
+
+```
 ### registrations
 
 #### Description
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4NjMwMzY2LDc2OTAwNjk5NSwxODE5ND
-Q2MzY1XX0=
+eyJoaXN0b3J5IjpbLTE0ODQ0MTM0MTAsNzY5MDA2OTk1LDE4MT
+k0NDYzNjVdfQ==
 -->
