@@ -114,9 +114,13 @@ ORDER BY
 Lists all the runs that have been attended by each hasher.
 
 #### Used in
+Hyperlinked drill-down form hasher-stats form:
+https://westlondonhash.com/hash-stats/hasher-runs/?wdt_column_filter[hasher_ID]=056
 
 #### SQL
 ```SQL
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER 
+VIEW `hasher_run_list`  AS
 SELECT
     LPAD(`hr`.`hasher_ID`, 3, 0) AS `hasher_ID`,
     `hr`.`run_number` AS `run_number`,
@@ -177,6 +181,6 @@ LIMIT 1
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTgxNzE2Niw2ODE4Mzk2NzEsLTIzNj
-Y1OTYxLDEyNzA0OTQxNTFdfQ==
+eyJoaXN0b3J5IjpbLTE5Nzg5NjIwOTIsNjgxODM5NjcxLC0yMz
+Y2NTk2MSwxMjcwNDk0MTUxXX0=
 -->
