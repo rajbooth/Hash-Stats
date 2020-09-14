@@ -98,9 +98,7 @@ This table stores details of pre-run registration information captured from the 
 
 #### SQL
 ```SQL
-
 -- Table structure for table `registrations`
---
 
 CREATE TABLE `registrations` (
   `reg_id` int(11) NOT NULL,
@@ -143,6 +141,6 @@ COMMIT;
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxNzMxODcwLDc2OTAwNjk5NSwxODE5ND
-Q2MzY1XX0=
+eyJoaXN0b3J5IjpbMjA1NTcwMjg4Miw3NjkwMDY5OTUsMTgxOT
+Q0NjM2NV19
 -->
