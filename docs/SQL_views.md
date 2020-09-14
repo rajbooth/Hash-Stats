@@ -138,11 +138,16 @@ ORDER BY
 ```
 ### run_hasher_list
 #### Description
-Lists all the hashers tha thave attended a giv
+Lists all the hashers that have attended a given run.
+
 #### Used in
+Hyperlinked drill-down from run-stats form:
+https://westlondonhash.com/hash-stats/run-attendance/?wdt_column_filter[run_number]=1811
 
 #### SQL
 ```SQL
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER 
+VIEW `run_hasher_list`  AS
 SELECT
     `hr`.`run_number` AS `run_number`,
     `h`.`hash_name` AS `hash_name`
@@ -196,6 +201,6 @@ LIMIT 1
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDUxNjk0OTksNjgxODM5NjcxLC0yMz
+eyJoaXN0b3J5IjpbLTE5NTg4ODU1NTIsNjgxODM5NjcxLC0yMz
 Y2NTk2MSwxMjcwNDk0MTUxXX0=
 -->
