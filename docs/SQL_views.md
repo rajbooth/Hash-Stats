@@ -160,7 +160,6 @@ FROM
     )
 ORDER BY
     `h`.`hash_name`
-
 ```
 ### next_run
 #### Description
@@ -201,6 +200,6 @@ LIMIT 1
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTg4ODU1NTIsNjgxODM5NjcxLC0yMz
-Y2NTk2MSwxMjcwNDk0MTUxXX0=
+eyJoaXN0b3J5IjpbNjA2OTE3MTgyLDY4MTgzOTY3MSwtMjM2Nj
+U5NjEsMTI3MDQ5NDE1MV19
 -->
