@@ -5,7 +5,7 @@
 
 ### wlh_hasher
 #### Description
-
+Contains data pertaining to individual hashers.
 #### SQL
 
 
@@ -25,5 +25,5 @@
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2NDI2MjU3LDE4MTk0NDYzNjVdfQ==
+eyJoaXN0b3J5IjpbNzY5MDA2OTk1LDE4MTk0NDYzNjVdfQ==
 -->
