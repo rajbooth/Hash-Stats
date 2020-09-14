@@ -9,8 +9,8 @@ This form is used to record the attendance and payment status for attendees at e
 [Run attendance form](https://docs.google.com/spreadsheets/d/1K0YOljGE2HHLYWpGt3HI9RvtwQnncWaLmcDvwE-ZFdc/edit#gid=873490598)
 
 ### Back-end scrips
-
+The scripts used on this form can be found on GitHub
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTU1NDU2NzUsLTE5NzExOTUwODgsLT
-M0NTM0MzU1XX0=
+eyJoaXN0b3J5IjpbLTYzNzg3NjczOSwtMTQxNTU0NTY3NSwtMT
+k3MTE5NTA4OCwtMzQ1MzQzNTVdfQ==
 -->
