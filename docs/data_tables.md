@@ -75,7 +75,7 @@ COMMIT;
 This is essentially a linking table that associates multiple hashers with each run.  The *hasher_run* table uses *run_number* and *hasher_ID* as foreign keys to reference records in the *wlh_runs* and *wlh_hasher* tables respectively.
 
 #### WP Front-end Form
-This table can be edited using the **hasher-run** form.
+This table can be edited using the private [**hasher-run**](https://westlondonhash.com/hasher-run/) form.
 
 #### SQL
 ```SQL
@@ -140,6 +140,6 @@ ALTER TABLE `registrations`
 COMMIT;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1Njg5NTkzNyw3NjkwMDY5OTUsMTgxOT
-Q0NjM2NV19
+eyJoaXN0b3J5IjpbNzk5MDU3MzYxLDc2OTAwNjk5NSwxODE5ND
+Q2MzY1XX0=
 -->
