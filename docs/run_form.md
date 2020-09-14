@@ -9,8 +9,8 @@ This form is used to record the attendance and payment status for attendees at e
 [Run attendance form](https://docs.google.com/spreadsheets/d/1K0YOljGE2HHLYWpGt3HI9RvtwQnncWaLmcDvwE-ZFdc/edit#gid=873490598)
 
 ### Back-end scrips
-The scripts used on this form can be found on GitHub
+The scripts used on this form can be found on [GitHub](https://raw.githubusercontent.com/rajbooth/Hash-Stats/master/code/run_form_scripts.gs), in addition to being included in the code behind the Google Sheet referenced above.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzg3NjczOSwtMTQxNTU0NTY3NSwtMT
+eyJoaXN0b3J5IjpbMTA4MjY4NDM2NiwtMTQxNTU0NTY3NSwtMT
 k3MTE5NTA4OCwtMzQ1MzQzNTVdfQ==
 -->
