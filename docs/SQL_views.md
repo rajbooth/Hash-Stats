@@ -206,8 +206,7 @@ ORDER BY
 Used to return details of the most recently added run in the **runs** table.
 
 #### Used in
-Populates the header in the Google Sheets run form application.
-https://tinyurl.com/y48jnbv8
+Populates the header in the Google Sheets [Run Attendance](https://docs.google.com/spreadsheets/d/1K0YOljGE2HHLYWpGt3HI9RvtwQnncWaLmcDvwE-ZFdc/edit#gid=873490598) application.
 
 #### SQL
 ```SQL
@@ -231,8 +230,7 @@ LIMIT 1
 Called by **run_form** REST API endpoint, and used to populate the list of registered hashers on the Run Attendance app.
 
 #### Used in
- Populates the list of registered hashers on the Google Sheets Run Attendance app.
- https://tinyurl.com/y48jnbv8
+ Populates the list of registered hashers on the Google Sheets [Run Attendance](https://docs.google.com/spreadsheets/d/1K0YOljGE2HHLYWpGt3HI9RvtwQnncWaLmcDvwE-ZFdc/edit#gid=873490598) app.
 
 #### SQL
 ```SQL
@@ -267,7 +265,7 @@ ORDER BY
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQwMTQ1NTYxLDE1MjA5MjkyNzEsMTA4MD
-IxOTY2MCw2ODE4Mzk2NzEsLTIzNjY1OTYxLDEyNzA0OTQxNTFd
-fQ==
+eyJoaXN0b3J5IjpbLTE1MDcwODg3MTAsMTUyMDkyOTI3MSwxMD
+gwMjE5NjYwLDY4MTgzOTY3MSwtMjM2NjU5NjEsMTI3MDQ5NDE1
+MV19
 -->
