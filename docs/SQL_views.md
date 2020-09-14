@@ -124,10 +124,27 @@ ORDER BY
 #### SQL
 ### next_run
 #### Description
+Used to return details of the most recently added run in the **runs** table.
 
 #### Used in
-
+Popul
 #### SQL
+```SQL
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER 
+VIEW `next_run`  AS 
+SELECT
+    `westlon2_stats`.`wlh_runs`.`run_number` AS `run_number`,
+    `westlon2_stats`.`wlh_runs`.`run_date` AS `run_date`,
+    `westlon2_stats`.`wlh_runs`.`location` AS `location`,
+    `westlon2_stats`.`wlh_runs`.`pub` AS `pub`,
+    `westlon2_stats`.`wlh_runs`.`hare` AS `hare`
+FROM
+    `westlon2_stats`.`wlh_runs`
+ORDER BY
+    `westlon2_stats`.`wlh_runs`.`run_number`
+DESC
+LIMIT 1
+```
 ### run_form
 #### Description
 
@@ -142,6 +159,6 @@ ORDER BY
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxODM5NjcxLC0yMzY2NTk2MSwxMjcwND
-k0MTUxXX0=
+eyJoaXN0b3J5IjpbMTc3MTYyNzE1OCw2ODE4Mzk2NzEsLTIzNj
+Y1OTYxLDEyNzA0OTQxNTFdfQ==
 -->
