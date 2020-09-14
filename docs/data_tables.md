@@ -99,7 +99,6 @@ This table stores details of pre-run registration information captured from the 
 #### SQL
 ```SQL
 -- Table structure for table `registrations`
-
 CREATE TABLE `registrations` (
   `reg_id` int(11) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -117,30 +116,17 @@ CREATE TABLE `registrations` (
   `run_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Indexes for dumped tables
---
-
---
 -- Indexes for table `registrations`
---
 ALTER TABLE `registrations`
   ADD PRIMARY KEY (`reg_id`),
   ADD UNIQUE KEY `idx_run_email` (`email`,`run_number`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
 -- AUTO_INCREMENT for table `registrations`
---
 ALTER TABLE `registrations`
   MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
-
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTcwMjg4Miw3NjkwMDY5OTUsMTgxOT
+eyJoaXN0b3J5IjpbLTMzNzA5MzcyMSw3NjkwMDY5OTUsMTgxOT
 Q0NjM2NV19
 -->
