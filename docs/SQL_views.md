@@ -109,6 +109,44 @@ WHERE
 ORDER BY
     `h`.`hash_name`
 ```
+### run_stats
+#### Description
+Generates a dataset containing details of all runs attended for each hasher, by joining the *wlh_hasher_run* table to the *wlh_hasher* table.
+#### Used in
+
+#### SQL
+```SQL
+SELECT
+    `r`.`run_number` AS `run_number`,
+    DATE_FORMAT(`r`.`run_date`, '%d/%m/%Y') AS `run_date`,
+    `r`.`location` AS `location`,
+    `r`.`pub` AS `pub`,
+    `r`.`hare` AS `hare`,
+    CONCAT(
+        'https://westlondonhash.com/hash-stats/run-attendance/?wdt_column_filter[run_number]=',
+        `r`.`run_number`,
+        '||',
+        `hr`.`runners`
+    ) AS `runners`
+FROM
+    (
+        `westlon2_stats`.`wlh_runs` `r`
+    LEFT JOIN(
+        SELECT
+            `westlon2_stats`.`wlh_hasher_run`.`run_number` AS `run_number`,
+            COUNT(0) AS `runners`
+        FROM
+            `westlon2_stats`.`wlh_hasher_run`
+        GROUP BY
+            `westlon2_stats`.`wlh_hasher_run`.`run_number`
+    ) `hr`
+ON
+    (`r`.`run_number` = `hr`.`run_number`)
+    )
+ORDER BY
+    `r`.`run_number`
+DESC
+```
 ### hasher_run_list
 #### Description
 Lists all the runs that have been attended by each hasher.
@@ -224,47 +262,9 @@ WHERE
 ORDER BY
     `h`.`hash_name`
 ```
-### run_stats
-#### Description
 
-#### Used in
-
-#### SQL
-```SQL
-SELECT
-    `r`.`run_number` AS `run_number`,
-    DATE_FORMAT(`r`.`run_date`, '%d/%m/%Y') AS `run_date`,
-    `r`.`location` AS `location`,
-    `r`.`pub` AS `pub`,
-    `r`.`hare` AS `hare`,
-    CONCAT(
-        'https://westlondonhash.com/hash-stats/run-attendance/?wdt_column_filter[run_number]=',
-        `r`.`run_number`,
-        '||',
-        `hr`.`runners`
-    ) AS `runners`
-FROM
-    (
-        `westlon2_stats`.`wlh_runs` `r`
-    LEFT JOIN(
-        SELECT
-            `westlon2_stats`.`wlh_hasher_run`.`run_number` AS `run_number`,
-            COUNT(0) AS `runners`
-        FROM
-            `westlon2_stats`.`wlh_hasher_run`
-        GROUP BY
-            `westlon2_stats`.`wlh_hasher_run`.`run_number`
-    ) `hr`
-ON
-    (`r`.`run_number` = `hr`.`run_number`)
-    )
-ORDER BY
-    `r`.`run_number`
-DESC
-    
-```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzM2OTA2NjQsMTA4MDIxOTY2MCw2OD
-E4Mzk2NzEsLTIzNjY1OTYxLDEyNzA0OTQxNTFdfQ==
+eyJoaXN0b3J5IjpbLTkxMzc4MDgyOSwxMDgwMjE5NjYwLDY4MT
+gzOTY3MSwtMjM2NjU5NjEsMTI3MDQ5NDE1MV19
 -->
