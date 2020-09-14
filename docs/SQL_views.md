@@ -113,7 +113,7 @@ ORDER BY
 Generates a dataset containing details of all hashers attending each run, by joining the *wlh_hasher_run* table to the *wlh_run* table.
 
 #### Used in
-Run-stats report: https://westlondonhash.com/hash-stats/run-stats/
+[Run-stats report](https://westlondonhash.com/hash-stats/run-stats/):
 #### SQL
 ```SQL
 CREATE  ALGORITHM=UNDEFINED  DEFINER=`root`@`localhost` SQL SECURITY DEFINER  
@@ -154,8 +154,8 @@ DESC
 Lists all the runs that have been attended by each hasher.
 
 #### Used in
-Hyperlinked drill-down form hasher-stats form:
-https://westlondonhash.com/hash-stats/hasher-runs/?wdt_column_filter[hasher_ID]=056
+Hyperlinked drill-down form [hasher-stats form](https://westlondonhash.com/hash-stats/hasher-runs/?wdt_column_filter%5Bhasher_ID%5D=056)
+
 
 #### SQL
 ```SQL
@@ -181,8 +181,8 @@ ORDER BY
 Lists all the hashers that have attended a given run.
 
 #### Used in
-Hyperlinked drill-down from run-stats form:
-https://westlondonhash.com/hash-stats/run-attendance/?wdt_column_filter[run_number]=1811
+Hyperlinked drill-down from [run-stats form](https://westlondonhash.com/hash-stats/run-attendance/?wdt_column_filter%5Brun_number%5D=1811)
+
 
 #### SQL
 ```SQL
@@ -267,7 +267,7 @@ ORDER BY
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA3MzMwNzcwLDE1MjA5MjkyNzEsMTA4MD
+eyJoaXN0b3J5IjpbMjQwMTQ1NTYxLDE1MjA5MjkyNzEsMTA4MD
 IxOTY2MCw2ODE4Mzk2NzEsLTIzNjY1OTYxLDEyNzA0OTQxNTFd
 fQ==
 -->
