@@ -188,7 +188,8 @@ LIMIT 1
 ```
 ### run_form
 #### Description
-Called by run_form REST API endpoint, and used to populate the lsi tof hregistered ha
+Called by **run_form** REST API endpoint, and used to populate the lis tof registered hashers on the Run Attendance app.
+
 #### Used in
 
 #### SQL
@@ -227,6 +228,6 @@ ORDER BY
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU0MDEyNjAsNjgxODM5NjcxLC0yMz
-Y2NTk2MSwxMjcwNDk0MTUxXX0=
+eyJoaXN0b3J5IjpbMTA4MDIxOTY2MCw2ODE4Mzk2NzEsLTIzNj
+Y1OTYxLDEyNzA0OTQxNTFdfQ==
 -->
