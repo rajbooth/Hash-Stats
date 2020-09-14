@@ -67,6 +67,8 @@ COMMIT;
 #### Description
 This is essentially a linking table that associates multiple hashers with each run.  The *hasher_run* table uses *run_number* and *hasher_ID* as foreign keys to reference records in the *wlh_runs* and *wlh_hasher* tables respectively.
 
+#### WP Front-end Form
+This table can be edited using the3 
 #### SQL
 ```SQL
 -- Table structure for table `wlh_hasher_run`
@@ -95,6 +97,9 @@ COMMIT;
 ### registrations
 #### Description
 This table stores details of pre-run registration information captured from the Google Forms run registration 'app'.
+
+#### WP Front-end Form
+This table cannot be maintained via a dedicated form in the WP front-end.
 
 #### SQL
 ```SQL
@@ -127,6 +132,6 @@ ALTER TABLE `registrations`
 COMMIT;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzA5MzcyMSw3NjkwMDY5OTUsMTgxOT
+eyJoaXN0b3J5IjpbMTk3MTg4MjQwOSw3NjkwMDY5OTUsMTgxOT
 Q0NjM2NV19
 -->
