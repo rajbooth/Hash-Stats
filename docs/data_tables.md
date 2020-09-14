@@ -91,14 +91,16 @@ ALTER TABLE `wlh_hasher_run`
 ALTER TABLE `wlh_hasher_run`
   MODIFY `import_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
-
-``
+```
 ### registrations
-
 #### Description
+This table stores details of pre-run registration information captured from the Google Forms run registration 'app'.
 
 #### SQL
+```SQL
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQxOTk0OTUsNzY5MDA2OTk1LDE4MT
+eyJoaXN0b3J5IjpbLTE5NjQ4MDcyMjYsNzY5MDA2OTk1LDE4MT
 k0NDYzNjVdfQ==
 -->
