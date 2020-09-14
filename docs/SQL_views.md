@@ -54,6 +54,57 @@ WHERE
 #### Used in
 
 #### SQL
+```SQL
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER 
+VIEW `hasher_stats`  AS 
+SELECT
+    LPAD(`h`.`hasher_ID`, 3, 0) AS `hasher_ID`,
+    `h`.`hash_name` AS `hash_name`,
+    `h`.`run_history` AS `Runs before 30 June 2018`,
+    `hr`.`recent` AS `Runs since 30 June 2018`,
+    CONCAT(
+        'https://westlondonhash.com/hash-stats/hasher-runs/?wdt_column_filter[hasher_ID]=',
+        LPAD(`h`.`hasher_ID`, 3, 0),
+        '||',
+        `hr`.`recent`
+    ) AS `recent`,
+    `h`.`run_history` + `hr`.`recent` AS `Total Runs`,
+    IFNULL(`hh`.`hared`, 0) AS `Hared since 30 June 2018`
+FROM
+    (
+        (
+            `westlon2_stats`.`wlh_hasher` `h`
+        LEFT JOIN(
+            SELECT
+                `westlon2_stats`.`wlh_hasher_run`.`hasher_ID` AS `hasher_ID`,
+                COUNT(0) AS `recent`
+            FROM
+                `westlon2_stats`.`wlh_hasher_run`
+            GROUP BY
+                `westlon2_stats`.`wlh_hasher_run`.`hasher_ID`
+        ) `hr`
+    ON
+        (`h`.`hasher_ID` = `hr`.`hasher_ID`)
+        )
+    LEFT JOIN(
+        SELECT
+            `westlon2_stats`.`wlh_hasher_run`.`hasher_ID` AS `hasher_ID`,
+            COUNT(0) AS `hared`
+        FROM
+            `westlon2_stats`.`wlh_hasher_run`
+        WHERE
+            `westlon2_stats`.`wlh_hasher_run`.`hasher_value` = 'H'
+        GROUP BY
+            `westlon2_stats`.`wlh_hasher_run`.`hasher_ID`
+    ) `hh`
+ON
+    (`h`.`hasher_ID` = `hh`.`hasher_ID`)
+    )
+WHERE
+    `hr`.`recent` > 1
+ORDER BY
+    `h`.`hash_name`
+```
 ### hasher_run_list
 #### Description
 
@@ -87,6 +138,6 @@ WHERE
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNTY2OTQxOSwtMjM2NjU5NjEsMTI3MD
+eyJoaXN0b3J5IjpbLTQxODQwNzA0NiwtMjM2NjU5NjEsMTI3MD
 Q5NDE1MV19
 -->
