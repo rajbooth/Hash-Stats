@@ -6,6 +6,10 @@
 ### wlh_hasher
 #### Description
 Contains data pertaining to individual hashers.
+
+#### WP Front-end Form
+This table can be edited using the **hashers** form in the WP front-end.
+
 #### SQL
 ```SQL
 -- Table structure for table `wlh_hasher`
@@ -71,7 +75,7 @@ COMMIT;
 This is essentially a linking table that associates multiple hashers with each run.  The *hasher_run* table uses *run_number* and *hasher_ID* as foreign keys to reference records in the *wlh_runs* and *wlh_hasher* tables respectively.
 
 #### WP Front-end Form
-This table can be edited using the hasher-run form.
+This table can be edited using the **hasher-run** form.
 
 #### SQL
 ```SQL
@@ -136,6 +140,6 @@ ALTER TABLE `registrations`
 COMMIT;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1NTMwMzg4LDc2OTAwNjk5NSwxODE5ND
+eyJoaXN0b3J5IjpbMjE1NjE5NTM1LDc2OTAwNjk5NSwxODE5ND
 Q2MzY1XX0=
 -->
