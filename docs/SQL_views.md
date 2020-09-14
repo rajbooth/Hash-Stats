@@ -6,11 +6,15 @@
 ### registration_info
 #### Description
 Lists details of all hashers who have registered for the next run.
+
 #### Used in
 Registrations report at:
 https://westlondonhash.com/registrations/
+
 #### SQL
 ```SQL
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER 
+VIEW `registration_info`  AS  
 SELECT
     row_number() over(
     ORDER BY
@@ -45,6 +49,7 @@ WHERE
 
 ### hasher_stats
 #### Description
+
 
 #### Used in
 
@@ -82,6 +87,6 @@ WHERE
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzE2Nzk1NiwtMjM2NjU5NjEsMTI3MD
+eyJoaXN0b3J5IjpbMTkwNTY2OTQxOSwtMjM2NjU5NjEsMTI3MD
 Q5NDE1MV19
 -->
