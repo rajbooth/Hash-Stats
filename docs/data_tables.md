@@ -8,7 +8,7 @@
 Contains data pertaining to individual hashers.
 
 #### WP Front-end Form
-This table can be edited using the **hashers** form in the WP front-end.
+This table can be edited using the private [**hashers** ](https://westlondonhash.com/hashers/) form in the WP front-end.
 
 #### SQL
 ```SQL
@@ -140,6 +140,6 @@ ALTER TABLE `registrations`
 COMMIT;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1NjE5NTM1LDc2OTAwNjk5NSwxODE5ND
-Q2MzY1XX0=
+eyJoaXN0b3J5IjpbMTcyODU0MzgxMCw3NjkwMDY5OTUsMTgxOT
+Q0NjM2NV19
 -->
