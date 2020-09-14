@@ -188,10 +188,37 @@ LIMIT 1
 ```
 ### run_form
 #### Description
-
+Called by run_form REST API endpoint, and used to populate the lsi tof hregistered ha
 #### Used in
 
 #### SQL
+```SQL
+SELECT
+    `h`.`hasher_ID` AS `ID`,
+    `h`.`hash_name` AS `hasher`,
+    IFNULL(
+        DATE_FORMAT(`h`.`membership_date`, '%d/%m/%Y'),
+        ' '
+    ) AS `memb exp`
+FROM
+    (
+        `westlon2_stats`.`registrations` `r`
+    JOIN `westlon2_stats`.`wlh_hasher` `h`
+    ON
+        (`r`.`hasher_ID` = `h`.`hasher_ID`)
+    )
+WHERE
+    `r`.`run_number` IN(
+    SELECT
+        MAX(
+            `westlon2_stats`.`wlh_runs`.`run_number`
+        ) AS `max_run`
+    FROM
+        `westlon2_stats`.`wlh_runs`
+)
+ORDER BY
+    `h`.`hash_name`
+```
 ### run_stats
 #### Description
 
@@ -200,6 +227,6 @@ LIMIT 1
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2OTE3MTgyLDY4MTgzOTY3MSwtMjM2Nj
-U5NjEsMTI3MDQ5NDE1MV19
+eyJoaXN0b3J5IjpbLTE2NTU0MDEyNjAsNjgxODM5NjcxLC0yMz
+Y2NTk2MSwxMjcwNDk0MTUxXX0=
 -->
