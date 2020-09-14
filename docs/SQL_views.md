@@ -114,9 +114,11 @@ ORDER BY
 Generates a dataset containing details of all hashers attending each run, by joining the *wlh_hasher_run* table to the *wlh_run* table.
 
 #### Used in
-
+Run-stats report: https://westlondonhash.com/hash-stats/run-stats/
 #### SQL
 ```SQL
+CREATE  ALGORITHM=UNDEFINED  DEFINER=`root`@`localhost` SQL SECURITY DEFINER  
+VIEW  `run_stats`  AS
 SELECT
     `r`.`run_number` AS `run_number`,
     DATE_FORMAT(`r`.`run_date`, '%d/%m/%Y') AS `run_date`,
@@ -266,6 +268,6 @@ ORDER BY
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTkwNTc3NywxMDgwMjE5NjYwLDY4MT
+eyJoaXN0b3J5IjpbMTUyMDkyOTI3MSwxMDgwMjE5NjYwLDY4MT
 gzOTY3MSwtMjM2NjU5NjEsMTI3MDQ5NDE1MV19
 -->
