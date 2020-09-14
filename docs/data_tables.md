@@ -33,17 +33,10 @@ ALTER TABLE `wlh_hasher`
   ADD PRIMARY KEY (`hasher_ID`),
   ADD UNIQUE KEY `hasher` (`hash_name`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
 -- AUTO_INCREMENT for table `wlh_hasher`
---
 ALTER TABLE `wlh_hasher`
   MODIFY `hasher_ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
-
 ```
 
 ### wlh_runs
@@ -59,6 +52,21 @@ CREATE TABLE `wlh_runs` (
   `pub` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `hare` varchar(50) COLLATE utf8_bin DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- Indexes for table `wlh_runs`
+--
+ALTER TABLE `wlh_runs`
+  ADD PRIMARY KEY (`run_number`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `wlh_runs`
+--
+ALTER TABLE `wlh_runs`
+  MODIFY `run_number` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
+COMMIT;
 
 ```
 ### wlh_hasher_run
@@ -97,6 +105,6 @@ COMMIT;
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzAzMTA2OCw3NjkwMDY5OTUsMTgxOT
+eyJoaXN0b3J5IjpbMTY1MTk3NzE0OSw3NjkwMDY5OTUsMTgxOT
 Q0NjM2NV19
 -->
