@@ -188,10 +188,11 @@ LIMIT 1
 ```
 ### run_form
 #### Description
-Called by **run_form** REST API endpoint, and used to populate the lis tof registered hashers on the Run Attendance app.
+Called by **run_form** REST API endpoint, and used to populate the list of registered hashers on the Run Attendance app.
 
 #### Used in
-
+ Populates the list of registered hashers on the Google Sheets Run Attendance app.
+ 
 #### SQL
 ```SQL
 SELECT
@@ -228,6 +229,6 @@ ORDER BY
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDIxOTY2MCw2ODE4Mzk2NzEsLTIzNj
-Y1OTYxLDEyNzA0OTQxNTFdfQ==
+eyJoaXN0b3J5IjpbLTIxMTg5OTU3MDcsMTA4MDIxOTY2MCw2OD
+E4Mzk2NzEsLTIzNjY1OTYxLDEyNzA0OTQxNTFdfQ==
 -->
