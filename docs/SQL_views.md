@@ -54,7 +54,8 @@ Generates a dataset containing details of all runs attended for each hasher, by 
 #### Used in
 
  - Hasher-stats report:  https://westlondonhash.com/hash-stats/hasher-stats/
- - List item
+ - Hasher-details form: https://westlondonhash.com/hashers/
+ - Top 20 hashers report: 
 
 #### SQL
 ```SQL
@@ -141,6 +142,6 @@ ORDER BY
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDcwMzUyMiwtMjM2NjU5NjEsMTI3MD
+eyJoaXN0b3J5IjpbMTIzNTYzNzEyOCwtMjM2NjU5NjEsMTI3MD
 Q5NDE1MV19
 -->
