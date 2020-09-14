@@ -8,6 +8,7 @@
 Contains data pertaining to individual hashers.
 #### SQL
 ```SQL
+-- Table structure for table `wlh_hasher`
 CREATE TABLE `wlh_hasher` (
   `hasher_ID` int(11) NOT NULL,
   `hash_name` varchar(50) COLLATE utf8_bin NOT NULL,
@@ -26,6 +27,23 @@ CREATE TABLE `wlh_hasher` (
   `award` tinyint(4) DEFAULT NULL,
   `award_date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- Indexes for table `wlh_hasher`
+ALTER TABLE `wlh_hasher`
+  ADD PRIMARY KEY (`hasher_ID`),
+  ADD UNIQUE KEY `hasher` (`hash_name`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `wlh_hasher`
+--
+ALTER TABLE `wlh_hasher`
+  MODIFY `hasher_ID` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
 ```
 
 ### wlh_runs
@@ -41,6 +59,7 @@ CREATE TABLE `wlh_runs` (
   `pub` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `hare` varchar(50) COLLATE utf8_bin DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
 ```
 ### wlh_hasher_run
 #### Description
@@ -78,6 +97,6 @@ COMMIT;
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNDAwOTA3Nyw3NjkwMDY5OTUsMTgxOT
+eyJoaXN0b3J5IjpbLTY2MzAzMTA2OCw3NjkwMDY5OTUsMTgxOT
 Q0NjM2NV19
 -->
