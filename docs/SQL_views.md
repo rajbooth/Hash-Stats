@@ -138,10 +138,25 @@ ORDER BY
 ```
 ### run_hasher_list
 #### Description
-
+Lists all the hashers tha thave attended a giv
 #### Used in
 
 #### SQL
+```SQL
+SELECT
+    `hr`.`run_number` AS `run_number`,
+    `h`.`hash_name` AS `hash_name`
+FROM
+    (
+        `westlon2_stats`.`wlh_hasher` `h`
+    JOIN `westlon2_stats`.`wlh_hasher_run` `hr`
+    ON
+        (`h`.`hasher_ID` = `hr`.`hasher_ID`)
+    )
+ORDER BY
+    `h`.`hash_name`
+
+```
 ### next_run
 #### Description
 Used to return details of the most recently added run in the **runs** table.
@@ -181,6 +196,6 @@ LIMIT 1
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzg5NjIwOTIsNjgxODM5NjcxLC0yMz
+eyJoaXN0b3J5IjpbLTIxMDUxNjk0OTksNjgxODM5NjcxLC0yMz
 Y2NTk2MSwxMjcwNDk0MTUxXX0=
 -->
