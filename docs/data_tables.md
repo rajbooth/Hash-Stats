@@ -7,7 +7,26 @@
 #### Description
 Contains data pertaining to individual hashers.
 #### SQL
-
+```SQL
+CREATE TABLE `wlh_hasher` (
+  `hasher_ID` int(11) NOT NULL,
+  `hash_name` varchar(50) COLLATE utf8_bin NOT NULL,
+  `alias` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `home_hash` varchar(50) COLLATE utf8_bin NOT NULL DEFAULT 'West London',
+  `first_name` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `last_name` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `email` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `mobile` varchar(15) COLLATE utf8_bin DEFAULT NULL,
+  `mailing_list` tinyint(1) DEFAULT NULL,
+  `membership_date` date DEFAULT NULL,
+  `run_history` int(11) DEFAULT NULL,
+  `resume_date` date DEFAULT NULL,
+  `square_date` date DEFAULT NULL,
+  `runs_recent` int(11) DEFAULT NULL,
+  `award` tinyint(4) DEFAULT NULL,
+  `award_date` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+```
 
 ### wlh_runs
 #### Description
@@ -25,5 +44,6 @@ Contains data pertaining to individual hashers.
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5MDA2OTk1LDE4MTk0NDYzNjVdfQ==
+eyJoaXN0b3J5IjpbLTEyNTU2MTgzOTEsNzY5MDA2OTk1LDE4MT
+k0NDYzNjVdfQ==
 -->
