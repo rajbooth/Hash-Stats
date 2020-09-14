@@ -111,7 +111,8 @@ ORDER BY
 ```
 ### run_stats
 #### Description
-Generates a dataset containing details of all runs attended for each hasher, by joining the *wlh_hasher_run* table to the *wlh_hasher* table.
+Generates a dataset containing details of all hashers attending each run, by joining the *wlh_hasher_run* table to the *wlh_run* table.
+
 #### Used in
 
 #### SQL
@@ -265,6 +266,6 @@ ORDER BY
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMzc4MDgyOSwxMDgwMjE5NjYwLDY4MT
+eyJoaXN0b3J5IjpbLTEwOTkwNTc3NywxMDgwMjE5NjYwLDY4MT
 gzOTY3MSwtMjM2NjU5NjEsMTI3MDQ5NDE1MV19
 -->
