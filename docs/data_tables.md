@@ -99,8 +99,50 @@ This table stores details of pre-run registration information captured from the 
 #### SQL
 ```SQL
 
+-- Table structure for table `registrations`
+--
 
+CREATE TABLE `registrations` (
+  `reg_id` int(11) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+  `email` varchar(50) NOT NULL,
+  `hasher_ID` smallint(6) DEFAULT NULL,
+  `hash_name` varchar(50) DEFAULT NULL,
+  `real_name` varchar(50) DEFAULT NULL,
+  `mobile` varchar(20) DEFAULT NULL,
+  `prev_reg` text NOT NULL,
+  `hashing` text NOT NULL,
+  `pubbing` text NOT NULL,
+  `comments` varchar(250) DEFAULT NULL,
+  `dietary` varchar(50) DEFAULT NULL,
+  `run_number` smallint(6) NOT NULL,
+  `run_date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `registrations`
+--
+ALTER TABLE `registrations`
+  ADD PRIMARY KEY (`reg_id`),
+  ADD UNIQUE KEY `idx_run_email` (`email`,`run_number`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `registrations`
+--
+ALTER TABLE `registrations`
+  MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQ4MDcyMjYsNzY5MDA2OTk1LDE4MT
-k0NDYzNjVdfQ==
+eyJoaXN0b3J5IjpbNjgxNzMxODcwLDc2OTAwNjk5NSwxODE5ND
+Q2MzY1XX0=
 -->
