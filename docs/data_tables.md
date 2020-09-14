@@ -30,12 +30,21 @@ CREATE TABLE `wlh_hasher` (
 
 ### wlh_runs
 #### Description
+Holds details of past runs.
 
 #### SQL
-
+```SQL
+CREATE TABLE `wlh_runs` (
+  `run_number` int(5) UNSIGNED NOT NULL,
+  `run_date` date NOT NULL,
+  `location` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `pub` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `hare` varchar(50) COLLATE utf8_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+```
 ### wlh_hasher_run
 #### Description
-
+Thi si sessentially a linking table that associates multiple hashers with each run.
 #### SQL
 
 ### registrations
@@ -44,6 +53,6 @@ CREATE TABLE `wlh_hasher` (
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTU2MTgzOTEsNzY5MDA2OTk1LDE4MT
-k0NDYzNjVdfQ==
+eyJoaXN0b3J5IjpbLTYzMjQ3NzY0OSw3NjkwMDY5OTUsMTgxOT
+Q0NjM2NV19
 -->
