@@ -45,6 +45,7 @@ Holds details of past runs.
 
 #### SQL
 ```SQL
+-- Table structure for table `wlh_runs`
 CREATE TABLE `wlh_runs` (
   `run_number` int(5) UNSIGNED NOT NULL,
   `run_date` date NOT NULL,
@@ -52,22 +53,15 @@ CREATE TABLE `wlh_runs` (
   `pub` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `hare` varchar(50) COLLATE utf8_bin DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
 -- Indexes for table `wlh_runs`
---
 ALTER TABLE `wlh_runs`
   ADD PRIMARY KEY (`run_number`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
 -- AUTO_INCREMENT for table `wlh_runs`
---
 ALTER TABLE `wlh_runs`
   MODIFY `run_number` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
-
 ```
 ### wlh_hasher_run
 #### Description
@@ -98,13 +92,13 @@ ALTER TABLE `wlh_hasher_run`
   MODIFY `import_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
-```
+``
 ### registrations
 
 #### Description
 
 #### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MTk3NzE0OSw3NjkwMDY5OTUsMTgxOT
-Q0NjM2NV19
+eyJoaXN0b3J5IjpbLTE0NDQxOTk0OTUsNzY5MDA2OTk1LDE4MT
+k0NDYzNjVdfQ==
 -->
