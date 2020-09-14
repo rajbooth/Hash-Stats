@@ -3,13 +3,27 @@
 
 ## Data tables
 
-wlh_hasher
+### wlh_hasher
+#### Description
 
-wlh_runs
+#### SQL
 
-wlh_hasher_run
 
-registrations
+### wlh_runs
+#### Description
+
+#### SQL
+
+### wlh_hasher_run
+#### Description
+
+#### SQL
+
+### registrations
+
+#### Description
+
+#### SQL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxOTQ0NjM2NV19
+eyJoaXN0b3J5IjpbMzI2NDI2MjU3LDE4MTk0NDYzNjVdfQ==
 -->
