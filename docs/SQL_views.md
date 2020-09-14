@@ -8,8 +8,7 @@
 Lists details of all hashers who have registered for the next run.
 
 #### Used in
-Registrations report at:
-https://westlondonhash.com/registrations/
+[Registrations report](https://westlondonhash.com/registrations/)
 
 #### SQL
 ```SQL
@@ -53,9 +52,9 @@ Generates a dataset containing details of all runs attended for each hasher, by 
 
 #### Used in
 
- - Hasher-stats report:  https://westlondonhash.com/hash-stats/hasher-stats/
- - Hasher-details form: https://westlondonhash.com/hashers/
- - Top 20 hashers report: https://westlondonhash.com/hash-stats/top-20-hashers/
+ - [Hasher-stats report](https://westlondonhash.com/hash-stats/hasher-stats/)
+ - [Hasher-details form](https://westlondonhash.com/hashers/)
+ - [Top 20 hashers report](https://westlondonhash.com/hash-stats/top-20-hashers/)
 
 #### SQL
 ```SQL
@@ -268,6 +267,7 @@ ORDER BY
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDkyOTI3MSwxMDgwMjE5NjYwLDY4MT
-gzOTY3MSwtMjM2NjU5NjEsMTI3MDQ5NDE1MV19
+eyJoaXN0b3J5IjpbNDA3MzMwNzcwLDE1MjA5MjkyNzEsMTA4MD
+IxOTY2MCw2ODE4Mzk2NzEsLTIzNjY1OTYxLDEyNzA0OTQxNTFd
+fQ==
 -->
