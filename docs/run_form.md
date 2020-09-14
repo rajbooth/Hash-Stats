@@ -1,7 +1,7 @@
 
 
 
-## Run Attendance Corm
+## Run Attendance Form
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTM0MzU1XX0=
+eyJoaXN0b3J5IjpbLTE5NzExOTUwODgsLTM0NTM0MzU1XX0=
 -->
