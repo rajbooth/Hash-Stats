@@ -192,9 +192,12 @@ Called by **run_form** REST API endpoint, and used to populate the list of regis
 
 #### Used in
  Populates the list of registered hashers on the Google Sheets Run Attendance app.
- 
+ https://tinyurl.com/y48jnbv8
+
 #### SQL
 ```SQL
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER 
+VIEW `run_form`  AS 
 SELECT
     `h`.`hasher_ID` AS `ID`,
     `h`.`hash_name` AS `hasher`,
@@ -227,8 +230,41 @@ ORDER BY
 #### Used in
 
 #### SQL
+```SQL
+SELECT
+    `r`.`run_number` AS `run_number`,
+    DATE_FORMAT(`r`.`run_date`, '%d/%m/%Y') AS `run_date`,
+    `r`.`location` AS `location`,
+    `r`.`pub` AS `pub`,
+    `r`.`hare` AS `hare`,
+    CONCAT(
+        'https://westlondonhash.com/hash-stats/run-attendance/?wdt_column_filter[run_number]=',
+        `r`.`run_number`,
+        '||',
+        `hr`.`runners`
+    ) AS `runners`
+FROM
+    (
+        `westlon2_stats`.`wlh_runs` `r`
+    LEFT JOIN(
+        SELECT
+            `westlon2_stats`.`wlh_hasher_run`.`run_number` AS `run_number`,
+            COUNT(0) AS `runners`
+        FROM
+            `westlon2_stats`.`wlh_hasher_run`
+        GROUP BY
+            `westlon2_stats`.`wlh_hasher_run`.`run_number`
+    ) `hr`
+ON
+    (`r`.`run_number` = `hr`.`run_number`)
+    )
+ORDER BY
+    `r`.`run_number`
+DESC
+    
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTg5OTU3MDcsMTA4MDIxOTY2MCw2OD
+eyJoaXN0b3J5IjpbLTE5NzM2OTA2NjQsMTA4MDIxOTY2MCw2OD
 E4Mzk2NzEsLTIzNjY1OTYxLDEyNzA0OTQxNTFdfQ==
 -->
