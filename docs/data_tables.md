@@ -43,6 +43,9 @@ COMMIT;
 #### Description
 Holds details of past runs.
 
+#### WP Front-end Form
+This form can be edited using the **runs** form in the WP front-end.
+
 #### SQL
 ```SQL
 -- Table structure for table `wlh_runs`
@@ -68,7 +71,8 @@ COMMIT;
 This is essentially a linking table that associates multiple hashers with each run.  The *hasher_run* table uses *run_number* and *hasher_ID* as foreign keys to reference records in the *wlh_runs* and *wlh_hasher* tables respectively.
 
 #### WP Front-end Form
-This table can be edited using the3 
+This table can be edited using the hasher-run form.
+
 #### SQL
 ```SQL
 -- Table structure for table `wlh_hasher_run`
@@ -132,6 +136,6 @@ ALTER TABLE `registrations`
 COMMIT;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTg4MjQwOSw3NjkwMDY5OTUsMTgxOT
-Q0NjM2NV19
+eyJoaXN0b3J5IjpbODQ1NTMwMzg4LDc2OTAwNjk5NSwxODE5ND
+Q2MzY1XX0=
 -->
