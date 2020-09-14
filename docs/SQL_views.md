@@ -127,7 +127,9 @@ ORDER BY
 Used to return details of the most recently added run in the **runs** table.
 
 #### Used in
-Popul
+Populates the header in the Google Sheets run form application.
+https://tinyurl.com/y48jnbv8
+
 #### SQL
 ```SQL
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER 
@@ -159,6 +161,6 @@ LIMIT 1
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTYyNzE1OCw2ODE4Mzk2NzEsLTIzNj
+eyJoaXN0b3J5IjpbMTYzMjcwNzg2MCw2ODE4Mzk2NzEsLTIzNj
 Y1OTYxLDEyNzA0OTQxNTFdfQ==
 -->
