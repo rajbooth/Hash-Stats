@@ -48,7 +48,7 @@ COMMIT;
 Holds details of past runs.
 
 #### WP Front-end Form
-This form can be edited using the **runs** form in the WP front-end.
+This form can be edited using the private [**run-list**](https://westlondonhash.com/run-list/) form in the WP front-end.
 
 #### SQL
 ```SQL
@@ -140,6 +140,6 @@ ALTER TABLE `registrations`
 COMMIT;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODU0MzgxMCw3NjkwMDY5OTUsMTgxOT
+eyJoaXN0b3J5IjpbMTk1Njg5NTkzNyw3NjkwMDY5OTUsMTgxOT
 Q0NjM2NV19
 -->
