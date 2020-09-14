@@ -111,6 +111,7 @@ ORDER BY
 ```
 ### hasher_run_list
 #### Description
+Lists all the runs that have been attended by each hasher.
 
 #### Used in
 
@@ -176,6 +177,6 @@ LIMIT 1
 #### SQL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU3ODg3OTg4LDY4MTgzOTY3MSwtMjM2Nj
-U5NjEsMTI3MDQ5NDE1MV19
+eyJoaXN0b3J5IjpbLTY1OTgxNzE2Niw2ODE4Mzk2NzEsLTIzNj
+Y1OTYxLDEyNzA0OTQxNTFdfQ==
 -->
