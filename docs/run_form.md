@@ -16,8 +16,8 @@ The back-end  **Hashers** sheet is populated by executing the *getHashers* funct
 
 The header in the  main **Run Form** sheet is populated by executing the *getNextRun* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/next_run](https://westlondonhash.com/wp-json/wlh/v1/next_run), and downloads the run number, date, location and harfe for the next run from the **wlh_runs** table.
 
-The main content for the **Run Form** sheet is populated by executing the *getRunners* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/run_form](https://westlondonhash.com/wp-json/wlh/v1/run_form), and downloads the list of hashers who have pre-registered for the next run from the **run_form** view in the WP database.  The hasher_ID and 
+The main content for the **Run Form** sheet is populated by executing the *getRunners* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/run_form](https://westlondonhash.com/wp-json/wlh/v1/run_form), and downloads the list of hashers who have pre-registered for the next run from the **run_form** view in the WP database.  The *hasher_ID* and *membership expiry date* columns are populated by performing a VLOOKUP of the hasher name in the **Hahsers** sheet
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyMTg4ODc5LDEwODI2ODQzNjYsLTE0MT
-U1NDU2NzUsLTE5NzExOTUwODgsLTM0NTM0MzU1XX0=
+eyJoaXN0b3J5IjpbLTE1MDEzNDI3OTksMTA4MjY4NDM2NiwtMT
+QxNTU0NTY3NSwtMTk3MTE5NTA4OCwtMzQ1MzQzNTVdfQ==
 -->
