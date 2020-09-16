@@ -12,11 +12,11 @@ This form is used to record the attendance and payment status for attendees at e
 The scripts used on this form can be found on [GitHub](https://raw.githubusercontent.com/rajbooth/Hash-Stats/master/code/run_form_scripts.gs), in addition to being included in the code behind the Google Sheet referenced above.
 
 #### Sheet population
-The back-end  **Hashers** sheet is populated by executing the *getHashers* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/hashers](https://westlondonhash.com/wp-json/wlh/v1/hashers) to download a list of all hashers and their associated membership renewal dates from the **wlh_hasher** table on the WP database.
+The back-end  **Hashers** sheet is populated by executing the *getHashers* function, which performs a GET call to the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/hashers](https://westlondonhash.com/wp-json/wlh/v1/hashers) to download a list of all hashers and their associated membership renewal dates from the **wlh_hasher** table on the WP database.
 
 The header in the  main **Run Form** sheet is populated by executing the *getNextRun* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/next_run](https://westlondonhash.com/wp-json/wlh/v1/next_run), and downloads the run number, date, location and harfe for the next run from the **wlh_runs** table.
 
-The main content for the **Run Form** sheet is populated by executing the *getRunners* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/run_form](https://westlondonhash.com/wp-json/wlh/v1/run_form), and downloads the list of hashers who have pre-registered for the next run from the **run_form** view in the WP database.  The *hasher_ID* and *membership expiry date* columns are populated by performing a VLOOKUP of the hasher name in the **Hashers** sheet.
+The main content for the **Run Form** sheet is populated by executing the *getRunners* function, which performs a GET call to the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/run_form](https://westlondonhash.com/wp-json/wlh/v1/run_form), and downloads the list of hashers who have pre-registered for the next run from the **run_form** view in the WP database.  The *hasher_ID* and *membership expiry date* columns are populated by performing a VLOOKUP of the hasher name in the **Hashers** sheet.
 
 #### Data entry
 Clicking in the ***Attended*** or ***Paid*** check-boxes on the ***Run Form*** sheet will cause the (normally hidden) value column to be updated as follows:
@@ -25,8 +25,8 @@ Clicking in the ***Attended*** or ***Paid*** check-boxes on the ***Run Form*** s
  - "2" - if the hasher has no current membership and has paid their weekly run fee
  - "M" - if the hasher is present and has a current membership
  - "X" - if the hasher is present but has no current membership and has not paid a weekly run fee  
-The act of clicking in either checkbox will also trigger the *hasher_checked* function, which in turn calls the *add_run* function.  This performs a POST call on the REST API endpoint:   https://westlondonhash.com/wp-json/wlh/v1/add_run ;
+The act of clicking in either checkbox will also trigger the *hasher_checked* function, which in turn calls the *add_run* function.  This performs a POST call to the REST API endpoint:   [https://westlondonhash.com/wp-json/wlh/v1/add_run](https://westlondonhash.com/wp-json/wlh/v1/add_run). The JSON payload includes the run number, run date, hasher name and hasher_ID fields.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTAyMzgyOSwxMDgyNjg0MzY2LC0xND
-E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
+eyJoaXN0b3J5IjpbNTg3NjMxMTcyLDEwODI2ODQzNjYsLTE0MT
+U1NDU2NzUsLTE5NzExOTUwODgsLTM0NTM0MzU1XX0=
 -->
