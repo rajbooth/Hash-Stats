@@ -28,8 +28,8 @@ Clicking in the ***Attended*** or ***Paid*** check-boxes on the ***Run Form*** s
  
 The act of clicking in either checkbox will also trigger the *hasher_checked* function, which in turn calls the *add_run* function.  This performs a POST call to the REST API endpoint:   [https://westlondonhash.com/wp-json/wlh/v1/add_run](https://westlondonhash.com/wp-json/wlh/v1/add_run). The JSON payload includes the ***run_number, run_date, hasher_name*** , and  ***hasher_ID*** fields, which are inserted (or updated if the key values already exist) into the **wlh_hasher_run** table in the WP stats database.
 
-If the hasher has not pre-registered for the run, then their hash name can be manually typed into he ***Hasher*** column on the **Run Form** .  This column uses the lis tof hasher name sin the Hashers sheet for data valication, sn simply typign the firs tlette ror two of the 
+If the hasher has not pre-registered for the run, then their hash name can be manually typed into he ***Hasher*** column on the **Run Form** .  This column uses the list of hasher names in the **Hashers** sheet for data validation, so simply typing the first few letters of the hasher's name will bring up the full has
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODUxMzYyMSwxMDgyNjg0MzY2LC0xND
+eyJoaXN0b3J5IjpbMjAzNjEwMDU2NCwxMDgyNjg0MzY2LC0xND
 E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
 -->
