@@ -2,7 +2,8 @@
 
 
 ## Reports
-The West L
+The West London Hash website provides access to a number of reports displaying various [hash statistics](https://westlondonhash.com/hash-stats/).
+
 ### Hasher Stats
 [Hasher stats](https://westlondonhash.com/hash-stats/hasher-stats/)
 
@@ -12,6 +13,6 @@ The West L
 ### Top 20 Hashers
 [Top-20 Hashers](https://westlondonhash.com/hash-stats/top-20-hashers/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc5NjE5MjksLTIwMjIwMDY2MjMsMj
-U5Mzk4ODY0LC0xMTQwMjc2MDgzXX0=
+eyJoaXN0b3J5IjpbMTUxMzYzMzg4MywtMjAyMjAwNjYyMywyNT
+kzOTg4NjQsLTExNDAyNzYwODNdfQ==
 -->
