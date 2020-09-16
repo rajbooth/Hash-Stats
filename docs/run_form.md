@@ -12,8 +12,8 @@ This form is used to record the attendance and payment status for attendees at e
 The scripts used on this form can be found on [GitHub](https://raw.githubusercontent.com/rajbooth/Hash-Stats/master/code/run_form_scripts.gs), in addition to being included in the code behind the Google Sheet referenced above.
 
 #### Sheet population
-The hashers sheet is popluatred by executing the
+The **Hashers** sheet is populated by executing the *getHashers* function, which 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjE1MTg4MzAsMTA4MjY4NDM2NiwtMT
-QxNTU0NTY3NSwtMTk3MTE5NTA4OCwtMzQ1MzQzNTVdfQ==
+eyJoaXN0b3J5IjpbLTEyMjQ5NTMzMywxMDgyNjg0MzY2LC0xND
+E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
 -->
