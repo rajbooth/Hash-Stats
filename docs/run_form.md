@@ -12,8 +12,8 @@ This form is used to record the attendance and payment status for attendees at e
 The scripts used on this form can be found on [GitHub](https://raw.githubusercontent.com/rajbooth/Hash-Stats/master/code/run_form_scripts.gs), in addition to being included in the code behind the Google Sheet referenced above.
 
 #### Sheet population
-The **Hashers** sheet is populated by executing the *getHashers* function, which performs a GET cal on the 
+The **Hashers** sheet is populated by executing the *getHashers* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/hashers] (https://westlondonhash.com/wp-json/wlh/v1/hashers), to download a list of all hashers and their associated membership renewal dates from the wlh_hasher table on the WP database.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxMjg5MjY4LDEwODI2ODQzNjYsLTE0MT
-U1NDU2NzUsLTE5NzExOTUwODgsLTM0NTM0MzU1XX0=
+eyJoaXN0b3J5IjpbLTU3NDkyMjEyNCwxMDgyNjg0MzY2LC0xND
+E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
 -->
