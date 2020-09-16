@@ -21,11 +21,14 @@ The main content for the **Run Form** sheet is populated by executing the *getRu
 #### Data entry
 Clicking in the ***Attended*** or ***Paid*** check-boxes on the ***Run Form*** sheet will cause the (normally hidden) value column to be updated as follows:
 
- - H - if the hasher's name corresponds to the named hare in the form header
- - 2 - 
+ - "H" - if the hasher's name corresponds to the named hare in the form header
+ - "2" - if the hasher has no current membership and has paid their weekly run fee
+ - "M" - if the hasher is present and has a current membership
+ - "X" - if the hasher is present but has no current membership and has not paid a weekly run fee
+ - 
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTE3MjE2MzksMTA4MjY4NDM2NiwtMT
+eyJoaXN0b3J5IjpbLTEzOTQ1NzQxOTQsMTA4MjY4NDM2NiwtMT
 QxNTU0NTY3NSwtMTk3MTE5NTA4OCwtMzQ1MzQzNTVdfQ==
 -->
