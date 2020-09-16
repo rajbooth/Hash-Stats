@@ -34,54 +34,67 @@ This file needs to be deployed in the current WordPress theme directory for the 
 ## REST Endpoints
 
 ### hashers
+
 **Description**
 Returns a list of all hashers in the  westlon2_stats database.
+
 **Usage**
 Populates hasher lookup tables in Google Sheets
+
 **SQL**
 ```SQL
 SELECT hasher_ID, hash_name, membership_date, resume_date FROM wlh_hasher
 ```
 
 ### runs
+
 **Description**
 Returns a list of all hashers in the  westlon2_stats database.
+
 **Usage**
 Populates hasher lookup tables in Google Sheets
+
 **SQL**
 ```SQL
 SELECT run_number, location FROM wlh_runs
 ```
 
 ### next_run 
+
 **Description**
 Returns a list of all hashers in the  westlon2_stats database.
+
 **Usage**
 Populates hasher lookup tables in Google Sheets
+
 **SQL**
 ```SQL
 SELECT * FROM wlh_runs ORDER BY run_number DESC LIMIT 1
 ```
-
 ### run_form
+
 **Description**
 Returns a list of all hashers in the  westlon2_stats database.
+
 **Usage**
 Populates hasher lookup tables in Google Sheets
+
 **SQL**
 ```SQL
 SELECT * FROM run_form
 ```
 
 ### add_run
+
 **Description**
 Returns a list of all hashers in the  westlon2_stats database.
+
 **Usage**
 Populates hasher lookup tables in Google Sheets
 
 ### register
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTY5MzcxNzIsLTE4Njg5NDkyNzgsND
-A1NDc2NDgxLDE5Mzc1MTEzNzMsODk2MDEwMTEzLDEwMzYyMDM1
-OTAsLTE0MTA1MjM5MzBdfQ==
+eyJoaXN0b3J5IjpbLTIyNzk4MjUwMiwtMTU5NjkzNzE3MiwtMT
+g2ODk0OTI3OCw0MDU0NzY0ODEsMTkzNzUxMTM3Myw4OTYwMTAx
+MTMsMTAzNjIwMzU5MCwtMTQxMDUyMzkzMF19
 -->
