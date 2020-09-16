@@ -19,8 +19,8 @@ The header in the  main **Run Form** sheet is populated by executing the *getNex
 The main content for the **Run Form** sheet is populated by executing the *getRunners* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/run_form](https://westlondonhash.com/wp-json/wlh/v1/run_form), and downloads the list of hashers who have pre-registered for the next run from the **run_form** view in the WP database.  The *hasher_ID* and *membership expiry date* columns are populated by performing a VLOOKUP of the hasher name in the **Hashers** sheet.
 
 #### Data entry
-Clicking in the Attend co
+Clicking in the ***Attended*** or ***Paid*** check-boxes on the ***Run Form*** sheet will cause the (normally hidden) value 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQ2MjIzMywxMDgyNjg0MzY2LC0xND
-E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
+eyJoaXN0b3J5IjpbLTE2MjA1NzkyMTUsMTA4MjY4NDM2NiwtMT
+QxNTU0NTY3NSwtMTk3MTE5NTA4OCwtMzQ1MzQzNTVdfQ==
 -->
