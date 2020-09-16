@@ -25,8 +25,8 @@ Clicking in the ***Attended*** or ***Paid*** check-boxes on the ***Run Form*** s
  - "2" - if the hasher has no current membership and has paid their weekly run fee
  - "M" - if the hasher is present and has a current membership
  - "X" - if the hasher is present but has no current membership and has not paid a weekly run fee  
-The act of clicking in either checkbox will also trigger the *hasher_checked*
+The act of clicking in either checkbox will also trigger the *hasher_checked* function, which in turn calls the *add_run* function.  This performs a POST call on the REST API endpoint:   https://westlondonhash.com/wp-json/wlh/v1/add_run ;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTczMzg5MiwxMDgyNjg0MzY2LC0xND
+eyJoaXN0b3J5IjpbLTUxNTAyMzgyOSwxMDgyNjg0MzY2LC0xND
 E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
 -->
