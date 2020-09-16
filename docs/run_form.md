@@ -25,8 +25,11 @@ Clicking in the ***Attended*** or ***Paid*** check-boxes on the ***Run Form*** s
  - "2" - if the hasher has no current membership and has paid their weekly run fee
  - "M" - if the hasher is present and has a current membership
  - "X" - if the hasher is present but has no current membership and has not paid a weekly run fee  
-The act of clicking in either checkbox will also trigger the *hasher_checked* function, which in turn calls the *add_run* function.  This performs a POST call to the REST API endpoint:   [https://westlondonhash.com/wp-json/wlh/v1/add_run](https://westlondonhash.com/wp-json/wlh/v1/add_run). The JSON payload includes the ***run_number, run_date, hasher_name*** , and  ***hasher_ID*** fields, which are inserted (or updated if the key values already exist) in the **wlh_hasher_run** table in the WP stats database.
+ 
+The act of clicking in either checkbox will also trigger the *hasher_checked* function, which in turn calls the *add_run* function.  This performs a POST call to the REST API endpoint:   [https://westlondonhash.com/wp-json/wlh/v1/add_run](https://westlondonhash.com/wp-json/wlh/v1/add_run). The JSON payload includes the ***run_number, run_date, hasher_name*** , and  ***hasher_ID*** fields, which are inserted (or updated if the key values already exist) into the **wlh_hasher_run** table in the WP stats database.
+
+If the hasher has not pre-registered for the run, then thei rhash name can be manually entered intot he ***Hasher*** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MjA3Njc0OSwxMDgyNjg0MzY2LC0xND
-E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
+eyJoaXN0b3J5IjpbLTE0NTExMTUxOTYsMTA4MjY4NDM2NiwtMT
+QxNTU0NTY3NSwtMTk3MTE5NTA4OCwtMzQ1MzQzNTVdfQ==
 -->
