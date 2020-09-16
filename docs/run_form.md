@@ -14,8 +14,8 @@ The scripts used on this form can be found on [GitHub](https://raw.githubusercon
 #### Sheet population
 The back-end  **Hashers** sheet is populated by executing the *getHashers* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/hashers] (https://westlondonhash.com/wp-json/wlh/v1/hashers), to download a list of all hashers and their associated membership renewal dates from the **wlh_hasher** table on the WP database.
 
-The header in the  main **Run Form** sheet is populated by executign the getNe
+The header in the  main **Run Form** sheet is populated by executing the *getNextRun* function, which performs a GET call on the REST API endpoint:  [https://westlondonhash.com/wp-json/wlh/v1/next_run](https://westlondonhash.com/wp-json/wlh/v1/next_run)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNTgxOTkzMSwxMDgyNjg0MzY2LC0xND
+eyJoaXN0b3J5IjpbLTI1OTAyMjY1NCwxMDgyNjg0MzY2LC0xND
 E1NTQ1Njc1LC0xOTcxMTk1MDg4LC0zNDUzNDM1NV19
 -->
